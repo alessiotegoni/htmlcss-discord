@@ -17,8 +17,24 @@ ul {
   margin: 0 auto;
 }
 
+.min-h-md {
+  min-height: 20rem;
+}
+
+.min-h-lg {
+  min-height: 25rem;
+}
+
+.min-h-xl {
+  min-height: 35rem;
+}
+
 .row {
   display: flex;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
 
 .justify-between {
@@ -37,11 +53,42 @@ ul {
   padding: 2rem 0;
 }
 
-.main {
-  padding: 4rem 0;
+.main,
+.section,
+.footer,
+.aside {
+  padding: 2rem 0;
 }
 
 .main .container {
   max-width: 40rem;
-  min-height: 25rem;
+}
+
+.section .col-1 {
+  flex-basis: 60%;
+}
+
+.section .col-2 {
+  flex-basis: 40%;
+}
+
+.footer {
+  padding-top: 0;
+}
+
+.footer .footer-col {
+  flex-basis: calc(100% / 5);
+}
+
+.footer .footer-col:first-child {
+  flex-basis: calc((100% / 5) * 2);
+}
+
+.aside {
+  border-top: 2px solid gray;
+  padding: 1rem 0 0 0;
+}
+
+.aside .container {
+  padding: 1rem 0;
 }
