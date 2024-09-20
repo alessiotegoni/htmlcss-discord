@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    background-color: #181818;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-2 {
+    gap: 8px;
+}
+
+.main-header nav {
+    padding: 2rem 0;
+}
