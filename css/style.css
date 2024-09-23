@@ -28,6 +28,16 @@ img {
   height: 100%;
 }
 
+.hero {
+  background: url("../img/jumbo.png") no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
 .btn {
   border-radius: 3rem;
   padding: 0.7rem 1.2rem;
@@ -40,30 +50,34 @@ img {
   color: #181818;
 }
 
-.hero {
-  background: url("../img/jumbo.png") no-repeat;
-  background-size: cover;
+.secondary-btn {
+  background-color: #7289da;
+  color: #fff;
 }
 
-.container {
-  max-width: 70rem;
-  margin: 0 auto;
+.download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-.min-h-md {
-  min-height: 20rem;
+.download-btn i {
+  font-size: 2rem;
 }
 
-.min-h-lg {
-  min-height: 25rem;
-}
-
-.min-h-xl {
-  min-height: 35rem;
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .row {
   display: flex;
+}
+
+.row .col-2 {
+  padding-top: 2rem;
+  text-align: left;
 }
 
 .row-reverse {
@@ -87,7 +101,7 @@ img {
 }
 
 .main-header nav {
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
 .main-header .nav-links {
@@ -101,14 +115,13 @@ img {
 
 .main,
 .section,
-.footer,
-.aside {
-  padding: 2rem 0;
+.footer {
+  padding: 5rem 2rem;
 }
 
 .main .container {
   max-width: 40rem;
-  margin: 2rem auto;
+  margin-top: 2rem;
   text-align: center;
   color: #fff;
 }
@@ -121,11 +134,7 @@ img {
   margin: 1.2rem 0 2rem;
 }
 
-.main #downloadBtn i {
-  font-size: 2rem;
-}
-
-.main #openInBrowserBtn {
+.main .open-in-browser-btn {
   background-color: #181818;
   color: #fff;
   margin-left: 0.7rem;
@@ -135,8 +144,23 @@ img {
   flex-basis: 60%;
 }
 
+.section .title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
 .section .col-2 {
   flex-basis: 40%;
+}
+
+.section .flex-col .subtitle {
+  max-width: 45rem;
+  text-align: center;
+}
+
+.section .flex-col figure + .title {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .footer {
