@@ -5,27 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord structure</title>
 
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
-        <nav class="row justify-between">
-          <a href="">logo</a>
-          <ul class="row justify-center gap-2">
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-          </ul>
-          <button>login</button>
-        </nav>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container min-h-md"></div>
-    </main>
+    <div class="hero">
+      <header class="main-header">
+        <div class="container">
+          <nav class="row justify-between">
+            <a href="/">
+              <img src="./img/logo.svg" alt="discord-logo" />
+            </a>
+            <ul class="nav-links row justify-center items-center">
+              <li><a href="">Scarica</a></li>
+              <li><a href="">Perche Discord</a></li>
+              <li><a href="">Nitro</a></li>
+              <li><a href="">Sicurezza</a></li>
+              <li><a href="">Assistenza</a></li>
+            </ul>
+            <button id="signinBtn" class="btn primary-btn">Accedi</button>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container min-h-md">
+          <h1 class="title">Il tuo posto per parlare</h1>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+            ratione ipsa ex veniam dolorem accusamus sunt, laudantium quam
+            doloremque? Inventore architecto recusandae porro cumque eaque qui.
+            Commodi aspernatur omnis nisi.
+          </p>
+          <div class="row justify-center gap-2">
+            <button
+              id="downloadBtn"
+              class="btn primary-btn row justify-center items-center gap-2"
+            >
+              <i class="bx bxs-cloud-download"></i>
+              Scarica per Mac
+            </button>
+            <button id="openInBrowserBtn" class="btn">
+              Apri Discord nel tuo browser
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
     <section class="section">
       <div class="container min-h-lg">
         <div class="row">
@@ -64,7 +93,7 @@
         </div>
         <div class="row justify-between">
           <a href="">logo</a>
-          <button>button</button>
+          <button class="btn">button</button>
         </div>
       </div>
     </footer>
