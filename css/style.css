@@ -83,12 +83,3 @@ ul {
 .footer .footer-col:first-child {
   flex-basis: calc((100% / 5) * 2);
 }
-
-.aside {
-  border-top: 2px solid gray;
-  padding: 1rem 0 0 0;
-}
-
-.aside .container {
-  padding: 1rem 0;
-}
