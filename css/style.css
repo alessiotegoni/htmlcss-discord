@@ -116,7 +116,7 @@ img {
 .main,
 .section,
 .footer {
-  padding: 5rem 2rem;
+  padding: 5rem 0;
 }
 
 .main .container {
@@ -140,17 +140,46 @@ img {
   margin-left: 0.7rem;
 }
 
+section.section:nth-child(odd) {
+  background-color: rgba(128, 128, 128, 0.08);
+}
+
+.section:has(.wave) {
+  position: relative;
+  padding-top: 10rem;
+}
+
+.section:has(.wave.reversed) {
+  padding-bottom: 10rem;
+}
+
+.wave {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  transform: rotate(180deg);
+}
+
+.wave.reversed {
+  top: auto;
+  bottom: 0;
+  transform: rotate(0);
+}
+
 .section .col-1 {
   flex-basis: 60%;
+}
+
+.section .col-2 {
+  flex-basis: 40%;
 }
 
 .section .title {
   margin-bottom: 1rem;
   font-size: 2rem;
-}
-
-.section .col-2 {
-  flex-basis: 40%;
 }
 
 .section .flex-col .subtitle {
@@ -164,13 +193,50 @@ img {
 }
 
 .footer {
-  padding-top: 0;
+  background-color: #181818;
+  color: #fff;
 }
 
 .footer .footer-col {
   flex-basis: calc(100% / 5);
+
+  h2, h3 {
+    color: #7289da;
+  }
 }
 
 .footer .footer-col:first-child {
   flex-basis: calc((100% / 5) * 2);
+  align-items: flex-start;
+}
+
+.footer .footer-col li:not(.social-links li) {
+  margin: 1rem 0;
+}
+
+.footer .footer-col li:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-col .lang-dropdown {
+  cursor: pointer;
+  margin: 1.5rem 0;
+}
+
+.footer .footer-col .lang-dropdown img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.footer .social-links {
+  font-size: 2rem;
+  gap: 1.5rem;
+}
+
+
+.footer aside {
+  border-top: 2px solid #7289da4d;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
 }
